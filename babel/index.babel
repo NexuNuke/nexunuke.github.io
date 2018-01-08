@@ -1,0 +1,43 @@
+class Neagr extends React.Component {
+	constructor(props) {
+  	super(props);
+    
+    this.state = {
+    	color: "brown",
+      name: "Nigger"
+    };
+    
+    this.toggleClick = this.toggleClick.bind(this);
+  }
+  
+  toggleClick() {
+  	if(this.state.color === "brown") {
+    	this.setState({
+      	color: "yellow",
+        name: "Chink"
+      });
+    } else {
+    	this.setState({
+      	color: "brown",
+        name: "Nigger"
+      });
+    }
+  };
+
+	render() {
+    const styleObj = {
+      backgroundColor: this.state.color,
+      name: this.state.name
+    }
+    
+   return(
+    <body style={styleObj}>
+   	<div style={styleObj}>
+   	  <h1 onClick={this.toggleClick}>{this.state.name}</h1>
+   	</div>
+    </body>
+   );
+  }
+}
+
+ReactDOM.render(<Neagr name="nigger"/>, document.getElementById('app'))
