@@ -21,8 +21,8 @@ a, a:hover, a:focus, a:visited {
 
 nav {
   position: relative;
-  width: 70vmin;
-  height: 70vmin;
+  width: 50%;
+  height: 50%;
   min-width: 500px;
   min-height: 500px;
   margin: 0 auto;
@@ -108,8 +108,8 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  width: 70vmin;
-  height: 70vmin;
+  width: 50%;
+  height: 50%;
   -webkit-transform: scale(0.1) translatez(0);
           transform: scale(0.1) translatez(0);
   -webkit-transition: -webkit-transform 0.05s 0.3s;
